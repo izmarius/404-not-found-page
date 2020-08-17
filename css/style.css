@@ -24,12 +24,11 @@ main {
 #error-image {
     max-width: 80%;
     margin: 0.5rem;
-    background-color: brown;
     align-self: center;
 }
 
 #error-image img{
-    max-width: ;width: 100%;
+    max-width: 100%;
 }
 
 #homepage-button {
@@ -46,7 +45,6 @@ main {
 
 article {
     margin: 1em 0;
-    background-color: chocolate;
 }
 
 .p1 {
@@ -61,4 +59,46 @@ article {
 
 .p3 {
     font-size: 16px;
+}
+
+@media screen and (min-width: 678px) {
+    .wrapper {
+        justify-content: flex-start;
+    }
+} 
+
+@media screen and (min-width: 1040px) {
+    main {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    #error-image {
+        flex: 0 0 50%;
+    }
+
+    section {
+        flex: 0 0 45%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center; 
+    }
+}
+
+@media screen and (min-width: 885px) {
+    .p1 {
+        font-size: 20px;
+    }
+
+    .p2 {
+        font-size: 24px;
+    }
+
+    .p3 {
+        font-size: 20px;
+    }
+
+    #error-image {
+        max-width: 60%;
+    }
 }
